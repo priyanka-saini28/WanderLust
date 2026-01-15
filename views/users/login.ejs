@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') %> 
+
+    <div class="container" style="min-height: 70vh">
+        <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+    
+            <div class="col-md-6 col-lg-4">
+                <h1 class="mb-4 text-center">Login</h1>
+                <form action="/login" method="POST" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input 
+                        name="username"
+                        id="username"
+                        type="text" 
+                        class="form-control" 
+                        required/>
+                        
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input 
+                        name="password"
+                        id="password"
+                        type="text" 
+                        class="form-control" 
+                        required/>
+                    </div>
+                    <button class="btn btn-success">Login</button>
+                </form>
+            </div>
+        </div>
